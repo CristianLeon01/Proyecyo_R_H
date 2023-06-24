@@ -1,11 +1,13 @@
 from Usuario import *
 class Empresa(Usuario):
-    def __init__(self,tipoUsuario,nombre,nit,tipoEmpresa,tipoDocumento,documento,correo,naturaleza,contraseña):
-        super().__init__(nombre,tipoUsuario,tipoDocumento,documento,contraseña)
+    def __init__(self, tipoUsuario, tipoDocumento, documento, contraseña, nombre, nit, tipoEmpresa, correo):
+        super().__init__(tipoUsuario, tipoDocumento, documento, contraseña)
+        self.__nombre=nombre
         self.__nit=nit
         self.__tipoEmpresa=tipoEmpresa
         self.__correo=correo
-        self.__naturaleza=naturaleza
-    def crearOferta():
-        pass
+        #self.__oferta=[]
+
+    def mostrarInfo (self):
+        return self.__nombre, self.__nit, self.__tipoEmpresa, self.__correo
     
