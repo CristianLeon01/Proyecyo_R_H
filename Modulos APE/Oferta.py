@@ -1,6 +1,9 @@
-class Oferta():
-    def __init__ (self, nombre, nit, tipoEmpresa, correo, id, numeroPostulados, fechaPublicacion, fechaCierre, vacantes, postulaciones):
+from Postulacion import *
+class Oferta(Postulacion):
+    def __init__ (self, postulacionAbierta, postulacionCerrada, matriculaAbierta, matriculaCerrada, 
+    nombre, nit, tipoEmpresa, correo, id, numeroPostulados, fechaPublicacion, fechaCierre, vacantes, postulaciones):
         #super().__init__(nombre, nit, tipoEmpresa, correo)
+        super().__init__(postulacionAbierta, postulacionCerrada, matriculaAbierta, matriculaCerrada)
         self.__id=id
         self.__numeroPostulados=numeroPostulados
         self.__fechaPublicacion=fechaPublicacion
