@@ -13,7 +13,6 @@ class BusquedaE (Empresa, Ocupacion):
         self.__candidatosMunicipio=candidatosMunicipio
         self.__busquedaE=[]
 
-      
       def getCargo(self):
         return self.__cargo
       def setCargo(self, cargo):
@@ -39,22 +38,28 @@ class BusquedaE (Empresa, Ocupacion):
       def setCandidatosMunicipio(self, candidatosMunicipio):
         self.__candidatosMunicipio=candidatosMunicipio
    
-    
       def filtrarDatos (self):
         pass
      
-      def insertarBusquedaE (self):
-         cargo = input("Ingrese el cargo que desea buscar:")
-         departamento = input("Ingrese el departamento que desea buscar:")
-         ciudad = input("Ingrese la ciudad que desea buscar:")
-         numCandidatosDepartamento = input("Ingrese el numero de candidatos por departamento que desea buscar:")
-         numCandidatosMunicipio = input("Ingrese el numero de candidatos por municipio que desea buscar:")
+      def insertarBusquedaE (self, oferta):
+        for i in range (oferta):
+          mesesExperiencia = input("Ingrese los meses de experiencia de la persona que dese buscar:")
+          if mesesExperiencia == mesesExperiencia:
+            print ("Estos meses de experiencia si han sido encontrado dentro de las ofertas")
+          else:
+            print("Estos mese de experiencia no se encuentran dentro de ninguna oferta")
 
-         #return BusquedaE (cargo, departamento, ciudad, numCandidatosDepartamento, numCandidatosMunicipio)
+        for i in range (oferta):
+          tipoEstudio = input("Ingrese tipo de estudio de la persona que dese buscar:")
+          if tipoEstudio == tipoEstudio:
+            print ("Este tipo de estudio si es encontrado dentro de las ofertas")
+          else:
+            print("Este tipo de estudio no se encuentra dentro de ninguna oferta")
+
+          return mesesExperiencia, tipoEstudio
      
       def agregarBusquedaE (self, busquedaE):
         self.__busquedaE.append(busquedaE)
 
-         
-      def getBusquedaE (self):
+      def getDatosBusquedaE (self):
          return self.__dict__

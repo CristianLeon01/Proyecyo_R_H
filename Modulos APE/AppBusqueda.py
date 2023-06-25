@@ -1,13 +1,25 @@
 from BusquedaE import *
 from BusquedaP import *
+from Oferta import *
+from Persona import *
+from Empresa import *
 
-busquedaE = BusquedaE.insertarBusquedaE(())
-busquedaE.agregarBusquedaE(busquedaE)
+mesesExperiencia = BusquedaE.insertarBusquedaE
+mesesExperiencia.agregarBusquedaE (mesesExperiencia)
 
-print(busquedaE.getBusquedaE())
+print(mesesExperiencia.getDatosBusquedaE())
 
+tipoEstudio = BusquedaE.insertarBusquedaE
+tipoEstudio.agregarBusqueda(tipoEstudio)
 
-busquedaP = BusquedaP.insertarBusquedaP()
-busquedaP.agregarBusquedaP(busquedaP)
+print(tipoEstudio.getDatosBusquedaE())
 
-print(busquedaP.getBusquedaP())
+nombreEmpresa = BusquedaP.insertarBusquedaP
+nombreEmpresa.agregarBusquedaP(nombreEmpresa)
+
+print(nombreEmpresa.getDatosBusquedaP())
+
+NITEmpresa= BusquedaP.insertarBusquedaP
+NITEmpresa.agregarBusquedaP(NITEmpresa)
+
+print(NITEmpresa.getDatosBusquedaP())

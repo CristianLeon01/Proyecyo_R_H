@@ -11,5 +11,10 @@ class Persona(Usuario, Estudio):
         self.__estadoCivil=estadoCivil
         self.__libretaMilitar=libretaMilitar
         self.__correo=correo
+
     def postularse():
         pass
+
+    def getDatos(self):
+        return self.__dict__
+    
