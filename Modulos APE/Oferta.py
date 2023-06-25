@@ -1,6 +1,9 @@
-class Oferta():
-    def __init__ (self, nombre, nit, tipoEmpresa, correo, id, numeroPostulados, fechaPublicacion, fechaCierre, vacantes, postulaciones):
+from Postulacion import *
+class Oferta(Postulacion):
+    def __init__ (self, postulacionAbierta, postulacionCerrada, matriculaAbierta, matriculaCerrada, 
+    nombre, nit, tipoEmpresa, correo, id, numeroPostulados, fechaPublicacion, fechaCierre, vacantes, postulaciones):
         #super().__init__(nombre, nit, tipoEmpresa, correo)
+        super().__init__(postulacionAbierta, postulacionCerrada, matriculaAbierta, matriculaCerrada)
         self.__id=id
         self.__numeroPostulados=numeroPostulados
         self.__fechaPublicacion=fechaPublicacion
@@ -9,7 +12,7 @@ class Oferta():
         self.__postulaciones=postulaciones
         self.__oferta=[]
 
-    def inserOferta():
+    def insertOferta():
         nombre = input("Ingrese el nombre de la empresa: ")
         nit = input("Ingrese el NIT de la empresa: ")
         tipoEmpresa = input("Ingrese el tipo de empresa: ")
@@ -21,7 +24,7 @@ class Oferta():
         vacantes = input("Ingrese el número de vacantes: ")
         postulaciones = input("Ingrese el número de postulaciones: ")
 
-        return Oferta (nombre, nit, tipoEmpresa, correo, id, numeroPostulados, fechaPublicacion, fechaCierre, vacantes, postulaciones)
+        #return Oferta (nombre, nit, tipoEmpresa, correo, id, numeroPostulados, fechaPublicacion, fechaCierre, vacantes, postulaciones)
     
     def agregarOferta(self, oferta):
         self.__oferta.append(oferta)
@@ -29,6 +32,5 @@ class Oferta():
     def getOferta(self):
         return self.__dict__
     
-
     def filtroOferta():
         pass

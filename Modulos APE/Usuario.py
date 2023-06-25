@@ -8,5 +8,5 @@ class Usuario:
     def mostrarInfo1(self):
         return self.__tipoUsuario, self.__tipoDocumento, self.__documento, self.__contraseña
 
-    def buscarCargo():
+    def buscarCargo(self):
         pass
