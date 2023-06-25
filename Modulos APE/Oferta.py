@@ -12,7 +12,7 @@ class Oferta(Postulacion):
         self.__postulaciones=postulaciones
         self.__oferta=[]
 
-    def inserOferta():
+    def insertOferta():
         nombre = input("Ingrese el nombre de la empresa: ")
         nit = input("Ingrese el NIT de la empresa: ")
         tipoEmpresa = input("Ingrese el tipo de empresa: ")

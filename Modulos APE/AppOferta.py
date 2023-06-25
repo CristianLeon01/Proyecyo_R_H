@@ -7,7 +7,7 @@ print(empresa1.mostrarInfo())
 print(empresa1.mostrarInfo1())
 print()
 
-oferta = Oferta.inserOferta()
+oferta = Oferta.insertOferta()
 oferta.agregarOferta(oferta)
 
 print(oferta.getOferta())
