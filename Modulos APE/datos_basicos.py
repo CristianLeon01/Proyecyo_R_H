@@ -1,7 +1,6 @@
 from Actualizacion_datos import *
 
 class datos_basicos:
-
     datos_identificacion=[]
     identidad=[]
     datos_nacimiento=[]

@@ -12,7 +12,7 @@ print(empresa1.mostrarInfo())
 print(empresa1.mostrarInfo1())
 print()
 oferta = Oferta.insertOferta()
-# oferta.agregarOferta(oferta)
+oferta.agregarOferta(oferta)
 print()
 print(oferta.__str__())
 
