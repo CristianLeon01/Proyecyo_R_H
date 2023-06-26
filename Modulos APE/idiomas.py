@@ -1,4 +1,4 @@
-from datos_basicos import *
+from Datos_basicos import *
 class idiomas:
     def __init__(self,idioma,dialecto):
         self.__idioma=idioma

@@ -1,4 +1,4 @@
-from datos_basicos import *
+from Datos_basicos import *
 class educacion:
     def __init__(self,primaria,secundaria,superior):
         self.__primaria=primaria

@@ -1,5 +1,5 @@
 from Oferta import *
-from datos_basicos import *
+from Datos_basicos import *
 class experiencia_laboral:
     def __init__(self,oferta):
         self.__oferta=oferta

@@ -25,7 +25,7 @@ class Oferta(Postulacion):
         vacantes = input("Ingrese el número de vacantes: ")
         postulaciones = input("Ingrese el número de postulaciones: ")
 
-        return cls(True, False, True, False, nombre, nit, tipoEmpresa, correo, id, numeroPostulados,
+        return cls(True, False True, False, nombre, nit, tipoEmpresa, correo, id, numeroPostulados,
                 fechaPublicacion, fechaCierre, vacantes, postulaciones)
 
     def agregarOferta(self, oferta):

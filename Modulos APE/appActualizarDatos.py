@@ -1,4 +1,4 @@
-from datos_basicos import *
+from Datos_basicos import *
 U1=datos_basicos()
 print()
 print('DATOS DE IDENTIFICACION')

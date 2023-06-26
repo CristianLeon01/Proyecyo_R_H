@@ -1,4 +1,4 @@
-from actualizacion_datos import *
+from Actualizacion_datos import *
 
 class datos_basicos:
 

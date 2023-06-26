@@ -1,3 +1,3 @@
-from experiencia_laboral import *
+from Experiencia_laboral import *
 class capacitacion:
     pass

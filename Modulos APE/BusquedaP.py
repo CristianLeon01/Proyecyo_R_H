@@ -16,41 +16,6 @@ class BusquedaP (Oferta, Persona):
         self.__economiaNaranja=economiaNaranja
         self.__busquedaP=[]
 
-    def getCargo(self):
-        return self.__cargo
-    def setCargo(self, cargo):
-        self.__cargo=cargo
-
-    def getCodigoSolicitud(self):
-        return self.__codigoSolicitud
-    def setCodigoSolicitud(self, codigoSolicitud):
-        self.__codigoSolicitud=codigoSolicitud
-
-    def getDepartamento(self):
-        return self.__departamento
-    def setDepartamento(self, departamento):
-        self.__departamento=departamento
-
-    def getCiudad(self):
-        return self.__ciudad
-    def setCiudad(self, ciudad):
-        self.__ciudad=ciudad
-    
-    def getTeletrabajo(self):
-        return self.__teleTrabajo
-    def setTeleTrabajo(self, teleTrabajo):
-        self.__teleTrabajo=teleTrabajo
-
-    def getSinExperiencia(self):
-        return self.__sinExperiencia
-    def setsinExperiencia(self, sinExperiencia):
-        self.__sinExperiencia=sinExperiencia
-
-    def getEconomiaNaranja(self):
-        return self.__economiaNaranja
-    def setEconomiaNaranja(self, economiaNaranja):
-        self.__economiaNaranja=economiaNaranja
-
     def filtrarDatos (self):
         pass
 
