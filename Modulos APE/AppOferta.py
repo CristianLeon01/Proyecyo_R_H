@@ -35,6 +35,7 @@ print(persona1.getDatos())
 oferta = Oferta.insertOferta()
 oferta.agregarOferta(oferta)
 print(oferta.getOferta())
+
 mesesExperiencia = BusquedaE (persona1)
 resultado1 = BusquedaE.agregarBusquedaE()
 print(resultado1)
