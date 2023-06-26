@@ -1,11 +1,11 @@
+from Oferta import *
 from Empresa import *
-from Ocupacion import *
-class BusquedaE (Empresa, Ocupacion):
-      def __init__(self,nombre, nit, tipoEmpresa, correo,
-                  idOcupacion,fechaInscripcion,cargo,candidatosRequeridos, nombreOficio, 
-                  departamento, ciudad, candidatosDepartamento, candidatosMunicipio):
+class BusquedaE (Oferta, Empresa):
+      def __init__(self, nombre, nit, tipoEmpresa, correo, 
+                   id, numeroPostulados, fechaPublicacion, fechaCierre, vacantes, postulaciones, 
+                   cargo,departamento, ciudad, candidatosDepartamento, candidatosMunicipio):
         super().__init__(nombre, nit, tipoEmpresa, correo)
-        super().__init__(idOcupacion,fechaInscripcion,cargo,candidatosRequeridos, nombreOficio)
+        super().__init__(id, numeroPostulados, fechaPublicacion, fechaCierre, vacantes, postulaciones)
         self.__cargo=cargo
         self.__departamento=departamento
         self.__ciudad=ciudad
@@ -42,24 +42,24 @@ class BusquedaE (Empresa, Ocupacion):
         pass
      
       def insertarBusquedaE (self, oferta):
-        for i in range (oferta):
+        for i in self.__oferta:
           mesesExperiencia = input("Ingrese los meses de experiencia de la persona que dese buscar:")
           if mesesExperiencia == mesesExperiencia:
             print ("Estos meses de experiencia si han sido encontrado dentro de las ofertas")
           else:
             print("Estos mese de experiencia no se encuentran dentro de ninguna oferta")
 
-        for i in range (oferta):
+        for i in self.__oferta:
           tipoEstudio = input("Ingrese tipo de estudio de la persona que dese buscar:")
           if tipoEstudio == tipoEstudio:
             print ("Este tipo de estudio si es encontrado dentro de las ofertas")
           else:
             print("Este tipo de estudio no se encuentra dentro de ninguna oferta")
 
-          return mesesExperiencia, tipoEstudio
+          return oferta
      
-      def agregarBusquedaE (self, busquedaE):
+      def agregarBusquedaE(self,busquedaE):
         self.__busquedaE.append(busquedaE)
 
       def getDatosBusquedaE (self):
-         return self.__dict__
+         return self.__cargo, self.__departamento, self.__ciudad, self.__candidatosDepartamento, self.__candidatosMunicipio
