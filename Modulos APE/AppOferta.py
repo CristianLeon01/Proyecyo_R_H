@@ -5,9 +5,12 @@ empresa1 = Empresa('Empresa', 'C.C', 1450368974, 'z78*sd36+AA', 'Mis zapatillas'
 print('Empresa 1:')
 print(empresa1.mostrarInfo())
 
-oferta = Oferta.insertOferta()
-oferta.agregarOferta(oferta)
-print(oferta.getOferta())
+oferta1 = Oferta('nombre', 'nit', 'tipoEmpresa', 'correo', 'id', 'numeroPostulados', 'fechaPublicacion',
+                'fechaCierre', 'vacantes', 'postulaciones', 'postulacionAbierta', 'postulacionCerrada', 
+                'matriculaAbierta', 'matriculaCerrada')
+
+oferta1.insertOferta()
+print(oferta1.getOferta())
 
 empresa2 = Empresa('Empresa', 'C.C', 1578635697, 'dd588SDd221g', 'Sistemas S.A', 578967, 'Asociativa', 'sistemasSs@hotmail.com')
 print('Empresa 2:')

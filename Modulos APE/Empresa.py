@@ -6,7 +6,6 @@ class Empresa(Usuario):
         self.__nit=nit
         self.__tipoEmpresa=tipoEmpresa
         self.__correo=correo
-        #self.__oferta=[]
 
     def mostrarInfo (self):
         return self.__nombre, self.__nit, self.__tipoEmpresa, self.__correo
