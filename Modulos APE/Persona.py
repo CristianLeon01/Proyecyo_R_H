@@ -1,9 +1,16 @@
 from Usuario import *
 from Estudio import *
-class Persona(Usuario, Estudio):
-    def __init__(self, nombre,apellido, tipoUsuario, tipoDocumento, tipoEstudio, mesesEstudio, descripcion, idiomas, documento,direccion,telefono,estadoCivil,libretaMilitar,correo, contraseña):
+from Postulacion import * 
+class Persona(Usuario, Estudio, Postulacion):
+    def __init__(self, tipoUsuario, tipoDocumento, documento, contraseña, 
+                tipoEstudio, mesesEstudio, descripcion, idiomas,
+                postulacionAbierta, postulacionCerrada, matriculaAbierta, matriculaCerrada,
+                nombre, apellido, direccion, telefono, estadoCivil, libretaMilitar, correo):
+        
         super().__init__(tipoUsuario,tipoDocumento,documento,contraseña)
         super().__init__(tipoEstudio, mesesEstudio, descripcion, idiomas)
+        super().__init__(postulacionAbierta, postulacionCerrada, matriculaAbierta, matriculaCerrada)
+
         self.__nombre=nombre
         self.__apellido=apellido
         self.__direccion=direccion

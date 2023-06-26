@@ -1,11 +1,10 @@
 from Empresa import *
-from Ocupacion import *
-class BusquedaE (Empresa, Ocupacion):
-      def __init__(self,nombre, nit, tipoEmpresa, correo,
-                  idOcupacion,fechaInscripcion,cargo,candidatosRequeridos, nombreOficio, 
-                  departamento, ciudad, candidatosDepartamento, candidatosMunicipio):
-        super().__init__(nombre, nit, tipoEmpresa, correo)
-        super().__init__(idOcupacion,fechaInscripcion,cargo,candidatosRequeridos, nombreOficio)
+
+class BusquedaE (Empresa):
+      def __init__(self,nombre, nit, tipoEmpresa, correo, naturaleza, tipoUsuario, tipoDocumento, documento, contraseña, 
+                  cargo, departamento, ciudad, candidatosDepartamento, candidatosMunicipio):
+        super().__init__(nombre, nit, tipoEmpresa, correo, naturaleza, tipoUsuario,
+                        tipoDocumento, documento, contraseña)
         self.__cargo=cargo
         self.__departamento=departamento
         self.__ciudad=ciudad
